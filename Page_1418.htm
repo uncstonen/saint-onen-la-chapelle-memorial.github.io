@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saint Onen La Chapelle - Guerre 1418</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* Empêche le scroll de la page principale */
+            font-family: Arial, sans-serif;
+            background-color: #f5f6fa; /* Couleur de fond pour faire ressortir l'iframe */
+        }
+
+        .page-container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        /* Section du haut : FIXE et CENTRÉE */
+        .section-haut {
+    
+            color: white;
+            padding: 0px;
+			justify-content: center;
+            flex-shrink: 0;
+            text-align: center;
+			 overflow: hidden;
+			 /* --- MODIFICATIONS DE LA HAUTEUR --- */
+            height: 245px; /* Augmentez ou diminuez cette valeur en pixels (ex: 200px) */
+        }
+
+        /* Section du bas : CENTRAGE DE L'IFRAME */
+        .section-bas {		
+            flex-grow: 1;
+            display: flex;
+            justify-content: center; /* Centre l'iframe horizontalement */
+            padding: 0 20px; /* Optionnel : ajoute une marge sur les côtés sur petit écran */
+        }
+
+        /* L'iframe centrée */
+        .page-integree {
+            width: 100%;
+            max-width: 1400px; /* Largeur maximale de votre colonne centrale */
+            height: 100%;
+            border: none;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1); /* Optionnel : ajoute une ombre subtile */
+            background-color: white; /* Assure un fond blanc si la page appelée est transparente */
+        }
+    .Style1 {
+	width: 100%;
+	max-width: 1400px;
+	height: 100%;
+	border: none;
+	box-shadow: 0 0 15px rgba(0,0,0,0.1);
+	background-color: white;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+    </style>
+</head>
+<body>
+
+    <div class="page-container">
+        
+        <!-- PARTIE HAUTE -->
+        <header class="section-haut">				
+				<iframe src="Haut_1418.htm" class="Style1"></iframe>
+								
+        </header>
+
+        <!-- PARTIE BASSE -->
+        <main class="section-bas">
+            <!-- Remplacez "page_existante.html" par votre fichier ou URL -->
+            <iframe src="1418.htm" class="Style1"></iframe>
+        </main>
+
+    </div>
+
+</body>
+</html>
